@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -70,3 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 FitGuide is a MERN-based fitness web app offering workout programs, diet plans, trainer profiles, and Razorpay payments. Includes user login, registration, role-based access, and a 3-day free trial. Built using React, Node.js, Express, and MySQL.
+=======
+# fitgude-gymwebsite
+>>>>>>> 96b1a89184f0e0e7158f4117027823180de8b1df
