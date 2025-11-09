@@ -1,0 +1,215 @@
+/* Hero Section */
+.hero {
+    position: relative;
+    background-image: url('https://t3.ftcdn.net/jpg/06/51/49/90/360_F_651499051_tQQimfoC1v8z8cD7m0mQjXElxJrMFppt.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed on scroll */
+    color: #fff;
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+    min-height: 100vh; /* Ensures full-screen coverage */
+    text-align: center;
+}
+
+/* Overlay to reduce background opacity */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust opacity (0.5 = 50%) */
+    z-index: 1;
+}
+
+/* Ensures text stays on top of the overlay */
+.hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Container */
+.hero-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Row */
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Column */
+.col {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Content */
+.hero-content {
+    max-width: 700px;
+}
+
+/* Headline */
+.hero-heading {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Highlighted Text */
+.hero-heading .highlight {
+    color: #ffc107; /* Yellow Highlight */
+}
+
+/* Paragraph */
+.para-line {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* Button Container */
+.inner-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Primary Button */
+.btn-blue {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 123, 255, 0.2);
+}
+
+.btn-blue:hover {
+    background-color: #0056b3;
+}
+
+/* Secondary Button */
+.btn-yellow {
+    background-color: #ffc107;
+    color: #fff;
+    box-shadow: 0px 4px 8px rgba(255, 193, 7, 0.2);
+}
+
+.btn-yellow:hover {
+    background-color: #e0a800;
+}
+
+/* Link Styling */
+.btn-yellow a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-heading {
+        font-size: 2.5rem;
+    }
+
+    .para-line {
+        font-size: 1.1rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+/* Smooth fade-in effect for hero content */
+.hero-content {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect for buttons */
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Make hero section more engaging */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Animate text appearance */
+.hero-heading {
+    opacity: 0;
+    animation: fadeInText 1.2s ease-in-out 0.3s forwards;
+}
+
+.para-line {
+    opacity: 0;
+    animation: fadeInText 1.5s ease-in-out 0.6s forwards;
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slight hover lift for navigation items */
+.navbar a {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+    transform: translateY(-2px);
+}
+

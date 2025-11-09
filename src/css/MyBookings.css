@@ -1,0 +1,94 @@
+/* MyBookings.css */
+
+.my-bookings-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    background: #111;
+    border-radius: 10px;
+    margin-top: 90px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .booking-card {
+    background: linear-gradient(to bottom, #1a1a1a, #000);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid rgba(255, 0, 0, 0.7);
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .booking-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+  }
+  
+  .booking-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid rgba(255, 0, 0, 0.8);
+  }
+  
+  h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #aaa;
+  }
+  
+  .booking-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .roll-tag {
+    display: inline-block;
+    background: red;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .cancel-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.cancel-btn:hover {
+    background: darkred;
+}
+  

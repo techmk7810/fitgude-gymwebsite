@@ -1,0 +1,1017 @@
+/**********************************************************
+  Add Google Fonts
+**********************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&family=Poppins:ital,wght@0,400;1,300;1,400&family=Roboto:ital@0;1');
+
+
+/**********************************************************
+  Reset Default Properties Start
+**********************************************************/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.288) inset;
+    background-color: var(--white);
+    border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--red);
+    border-radius: 7rem;
+}
+
+html {
+    font-size: 62.5%;
+    /* Now 1rem = 1em = 10px */
+
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/**********************************************************
+  Reset Default Properties End
+**********************************************************/
+
+
+
+/**********************************************************
+   Variales Start
+**********************************************************/
+:root {
+
+    /* Theme Colors */
+    --black: #000;
+    --white: #fff;
+    --red: #ef1212;
+
+    /* Theme Fonts */
+    --font-family-1: 'Oswald', sans-serif;
+}
+
+/**********************************************************
+   Variales End
+**********************************************************/
+
+
+/**********************************************************
+  Common Properties to Frequently Used Elements Start
+**********************************************************/
+
+body {
+    background-color: var(--black);
+
+    /* Following Properties Will be Inherited by All the Elements */
+    text-transform: uppercase;
+    font-family: var(--font-family-1);
+    color: var(--white);
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: all .3s linear;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    transition: all .3s linear;
+    font-family: var(--font-family-1);
+    font-size: 1.4rem;
+    padding: 1.2rem 2.2rem;
+    text-transform: uppercase;
+    border: 2px solid var(--white);
+    color: var(--white);
+}
+
+
+input,
+textarea {
+    outline: none;
+}
+
+img {
+    display: inline-block;
+    object-fit: cover;
+    width: 100%;
+}
+
+
+h1 {
+    letter-spacing: 1.3px;
+}
+
+h2 {
+    letter-spacing: 1px;
+}
+
+p {
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 1.3rem;
+
+}
+
+
+/**********************************************************
+    Common Properties to Frequently Used Elements End
+**********************************************************/
+
+
+
+/***********************************************************************************************
+  Actual Document Styling Start
+***********************************************************************************************/
+
+
+/**********************************************************
+  Wrapper Start
+**********************************************************/
+.wrapper {
+    width: 100vw;
+    height: auto;
+}
+
+
+/**********************************************************
+    Header Start 
+**********************************************************/
+header {
+    /* width: 100%; */
+    /* min-height: 100vh; */
+    /* background-image: linear-gradient(-219deg, rgba(0, 0, 0, 0.788) 12%, rgba(255, 0, 0, 0.82) 37%, rgba(0, 0, 0, 0.13)70%), url("../assets/images/hero-1.jpg"); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+}
+
+/**********************************************************
+    Nav Start 
+**********************************************************/
+nav {
+    width: 100%;
+    padding-block: .6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9); /* Add background to avoid transparency */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+
+/* Navigation Buttons */
+.nav-buttons {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+  }
+  
+  /* Common Button Styles */
+  .nav-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Contact Me Button */
+  .transparent-btn {
+    background-color: transparent;
+    border: 2px solid #ff6600;
+    color: #ff6600;
+  }
+  
+  .transparent-btn:hover {
+    background-color: #ff6600;
+    color: white;
+  }
+  
+  /* Login Button */
+  .login-btn {
+    background-color: #ff6600;
+    color: white;
+  }
+  
+  .login-btn:hover {
+    background-color: #e65c00;
+  }
+
+  .welcome-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.welcome-msg {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logout-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+  
+
+
+/**********************************************************
+    Logo
+**********************************************************/
+.logo-box img {
+    height: 8rem;
+    width: auto;
+    filter: contrast(0.6) saturate(6);
+}
+
+.logo-box h2 {
+    font-size: 2.5rem;
+    margin-left: .7rem;
+}
+
+/**********************************************************
+   Nav Links
+**********************************************************/
+.nav-links ul {
+    gap: 2.5rem;
+}
+
+.nav-links ul li a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    color: var(--white);
+}
+
+@media (hover:hover) {
+
+    .nav-links ul li a:hover,
+    .nav-links ul li:first-child a {
+        color: var(--red);
+    }
+}
+
+
+/**********************************************************
+   Mobile Toggle Button
+**********************************************************/
+.mobile-toggle-btn {
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid var(--white);
+    border-radius: 5px;
+    display: none;
+    place-items: center;
+    font-size: 2.5rem;
+}
+
+/**********************************************************
+    Nav End
+**********************************************************/
+
+
+/**********************************************************
+   Hero Section Text Start
+**********************************************************/
+#hero-text {
+    min-height: 80vh;
+}
+
+#hero-text h2 {
+    font-size: 4.5rem;
+    -webkit-text-stroke: 1px var(--white);
+    -webkit-text-fill-color: transparent;
+}
+
+#hero-text h1 {
+    font-size: 9rem;
+    word-spacing: 8px;
+    margin: -1.5rem 0 1.5rem;
+}
+
+/**********************************************************
+   Hero Section Text End
+**********************************************************/
+
+
+/**********************************************************
+   Header End
+**********************************************************/
+
+
+/**********************************************************
+    Training Section Start
+**********************************************************/
+.training-boxes-container {
+    gap: 5rem;
+}
+
+/**********************************************************
+    Training Box
+**********************************************************/
+.training-box {
+    flex: 1;
+    min-height: 35rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.233), rgba(0, 0, 0, 0.434)), url("../assets/hero-card-1.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-inline: 10%;
+    text-align: center;
+}
+
+.training-box:last-child {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.306), rgba(0, 0, 0, 0.584)), url("../assets/hero-card-2.jpg");
+}
+
+.training-box h2,
+.offer-box h2,
+.gallery-box-overlay h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.training-box{
+    background-color: var(--black);
+    padding: 1rem 4rem;
+    margin-top: 2rem;
+}
+
+@media (hover:hover) {
+    .training-box {
+        background-color: transparent;
+    }
+}
+
+/**********************************************************
+    Training Section End
+**********************************************************/
+
+
+/**********************************************************
+    Offers Section Start
+**********************************************************/
+.offer-boxes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.offer-box {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensuring the button stays at the bottom */
+.offer-box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;  /* Pushes the button to the bottom */
+    justify-content: space-between;
+}
+
+.offer-box img {
+    margin-bottom: 2rem;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+@media (hover:hover) {
+    .offer-box img:hover {
+        transform: scale(1.08);
+    }
+}
+
+.training-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: auto;  /* Pushes the button to the bottom */
+    border-radius: 5px;
+    align-self: center; /* Centers the button */
+}
+
+.training-btn:hover {
+    background-color: #e14a2b;
+}
+
+  
+
+/**********************************************************
+    Offers Section End
+**********************************************************/
+
+
+/**********************************************************
+    Gallery Section Start
+**********************************************************/
+
+
+/**********************************************************
+    Gallery Rows
+**********************************************************/
+.gallery-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.gallery-row-2 {
+    grid-template-columns: 25% 25% auto;
+}
+
+/**********************************************************
+    Gallery Box
+**********************************************************/
+.gallery-box {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery-box img {
+    height: 35rem;
+}
+
+.gallery-box .gallery-box-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--black);
+    background: linear-gradient(rgba(0, 0, 0, 0.445), rgba(255, 0, 0, 0.696));
+    display: flex;
+    align-items: flex-end;
+    padding: 5rem;
+    transition: all .3s linear;
+    transform: translateY(100%);
+}
+
+@media (hover:hover) {
+    .gallery-box:hover>.gallery-box-overlay {
+        transform: translateY(0%);
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply Animation to the Entire Gallery Section */
+#gallery-section {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Apply Animation to Each Gallery Box */
+.gallery-box {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Staggered Delay for a Smooth Effect */
+.gallery-box:nth-child(1) { animation-delay: 0.2s; }
+.gallery-box:nth-child(2) { animation-delay: 0.4s; }
+.gallery-box:nth-child(3) { animation-delay: 0.6s; }
+.gallery-box:nth-child(4) { animation-delay: 0.8s; }
+.gallery-box:nth-child(5) { animation-delay: 1s; }
+.gallery-box:nth-child(6) { animation-delay: 1.2s; }
+
+
+/**********************************************************
+    Gallery Section End
+**********************************************************/
+
+
+/**********************************************************
+    Pricing Section Start
+**********************************************************/
+
+.pricing-boxes-container {
+    gap: 4rem;
+}
+
+/**********************************************************
+    Pricing Box
+**********************************************************/
+.pricing-box {
+    flex-basis: 30%;
+    border: 2px solid var(--white);
+    padding: 3rem;
+    transition: all .2s linear;
+    color: var(--white);
+}
+
+@media (hover:hover) {
+    .pricing-box:hover {
+        transform: translateY(-8px);
+    }
+}
+
+.pricing-box .pricing-icon {
+    width: 6rem;
+    height: 6rem;
+    background-color: var(--red);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 2rem;
+}
+
+.pricing-box .pricing-icon img {
+    width: 60%;
+}
+
+.pricing-box h2 {
+    font-size: 2.6rem;
+    font-weight: 400;
+}
+
+.pricing-box h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--red);
+    margin: 8px 0 2rem;
+}
+
+.pricing-box span {
+    font-size: 1.4rem;
+    color: var(--white);
+    margin-left: .4rem;
+}
+
+.pricing-box ul li {
+    margin-block: 1rem;
+    font-size: 1.4rem;
+}
+
+.pricing-box ul li i {
+    color: var(--red);
+    margin-right: 2rem;
+    font-size: 1.6rem;
+}
+
+.pricing-box .pricing-btn {
+    width: 100%;
+    margin-top: 2.5rem;
+    background-color: transparent;
+}
+
+@media (hover:hover) {
+    .pricing-box .pricing-btn:hover {
+        background-color: var(--white);
+        color: var(--black);
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply Animation to the Offer Section */
+#offer-section {
+    opacity: 0; /* Initially hidden */
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Staggered Animation for Offer Boxes */
+.offer-box {
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Delay animations for each box */
+.offer-box:nth-child(1) { animation-delay: 0.3s; }
+.offer-box:nth-child(2) { animation-delay: 0.6s; }
+.offer-box:nth-child(3) { animation-delay: 0.9s; }
+
+
+/**********************************************************
+    Pricing Section End
+**********************************************************/
+
+
+/**********************************************************
+    About Section Start
+**********************************************************/
+
+/**********************************************************
+    About Section Image
+**********************************************************/
+.about-img {
+    width: 50%;
+    filter: contrast(1.1);
+}
+
+/**********************************************************
+    About Section Info
+**********************************************************/
+.about-info {
+    width: 50%;
+    padding-left: 5rem;
+}
+
+.about-info h1 {
+    font-size: 4.5rem;
+    -webkit-text-stroke: 1px var(--white);
+    -webkit-text-fill-color: transparent;
+}
+
+.about-info h3 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.about-info p {
+    margin: 1.6rem 0 3rem
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply Animation to About Section */
+#about-section {
+    opacity: 0; /* Initially hidden */
+    animation: fadeInUp 1s ease-in-out forwards;
+    margin-top: 60px;
+}
+
+
+/**********************************************************
+    About Section End
+**********************************************************/
+
+
+/**********************************************************
+    Blogs Section Start
+**********************************************************/
+.blogs-boxes-container {
+    gap: 5rem;
+}
+
+.blog-box {
+    flex: 1;
+}
+
+.blog-box h6 {
+    font-size: 1.8rem;
+    margin-block: 1.5rem;
+}
+
+/**********************************************************
+    Blogs Section End
+**********************************************************/
+
+
+/**********************************************************
+    Footer Banner Image Start
+**********************************************************/
+.footer-banner {
+    min-height: 70rem;
+    background-image: 
+        linear-gradient(-220deg, rgba(0, 0, 0, 0.8) 20%, rgba(255, 0, 0, 0.75) 65%, rgba(0, 0, 0, 0.4) 85%), 
+        url("../assets/footer-banner.jpg");
+        background-size: 100% auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+
+    /* Smooth Fade-in Animation */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInBanner 1.5s ease-out forwards;
+}
+
+/* Keyframes for smooth fade-in */
+@keyframes fadeInBanner {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ensure text remains readable */
+.footer-quote {
+    font-size: 4rem;
+    font-weight: bold;
+    max-width: 70%;
+    line-height: 1.5;
+    text-align: center; /* Ensures horizontal centering */
+    background: linear-gradient(90deg, #ffffff, #dcdcdc); /* Gradient from red to orange */
+    -webkit-background-clip: text; /* Clips gradient to text */
+    -webkit-text-fill-color: transparent; /* Makes non-gradient parts transparent */
+    text-shadow: none; /* Remove shadow to keep gradient clean */
+    
+    /* Center the text inside the parent */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    /* Smooth fade-in animation */
+    opacity: 0;
+    animation: fadeInText 1.8s ease-out forwards 0.5s;
+}
+
+/* Keyframes for text fade-in */
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .footer-banner {
+        min-height: 35rem;
+        padding: 2rem;
+    }
+
+    .footer-quote {
+        font-size: 1.5rem;
+        max-width: 85%;
+    }
+}
+
+
+
+/**********************************************************
+    Footer Banner Image End
+**********************************************************/
+
+
+/**********************************************************
+    Contact Secttion Start
+**********************************************************/
+#contact-section {
+    background-color: #0e0d0d;
+}
+
+.contact-center {
+    gap: 6rem;
+    padding-block: 2rem;
+}
+
+/**********************************************************
+    Contact Box
+**********************************************************/
+.contact-box {
+    flex: 1;
+
+}
+
+.contact-box span {
+    width: 6rem;
+    height: 6rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 2rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+@media (hover:hover) {
+    .contact-box span:hover {
+        color: var(--black);
+        background-color: var(--white);
+    }
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h3 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: .8rem;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply Animation to the Contact Section */
+#contact-section {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Apply Animation to Each Contact Box */
+.contact-box {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Staggered Delay for Contact Boxes */
+.contact-box:nth-child(1) { animation-delay: 0.2s; }
+.contact-box:nth-child(2) { animation-delay: 0.4s; }
+.contact-box:nth-child(3) { animation-delay: 0.6s; }
+
+/* Apply Animation to Footer Banner */
+.footer-banner {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+
+
+/**********************************************************
+    Contact Secttion End
+**********************************************************/
+
+
+/**********************************************************
+    Footer Start
+**********************************************************/
+footer {
+    background-color: var(--black);
+    padding: 3rem 0 2rem; /* Reduced padding from top */
+    flex-direction: column;
+}
+
+footer h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: var(--white);
+}
+
+/**********************************************************
+    Footer Links
+**********************************************************/
+footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin: 2.5rem 0 3rem; /* Adjusted margins */
+}
+
+footer ul li a {
+    font-size: 1.1rem; /* Slightly reduced font size */
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+@media (hover:hover) {
+    footer ul li a:hover {
+        color: var(--red);
+    }
+}
+
+/**********************************************************
+    Social Media Icons
+**********************************************************/
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem; /* Reduced spacing */
+}
+
+.social-media-icons a {
+    width: 3rem; /* Decreased size */
+    height: 3rem; /* Decreased size */
+    border-radius: 50%;
+    background: #ff4b2b; /* Solid background color */
+    color: var(--white);
+    font-size: 1.5rem; /* Decreased icon size */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    opacity: 1; /* Fully opaque */
+}
+
+@media (hover:hover) {
+    .social-media-icons a:hover {
+        background: #ff9800;
+        color: #121212;
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+footer hr {
+    width: 60%;
+    margin-block: 3rem;
+    border: none;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer p {
+    font-size: 1.1rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/**********************************************************
+    Footer End
+**********************************************************/
+
+
+/***********************************************************************************************
+  Actual Document Styling End
+***********************************************************************************************/

@@ -68,3 +68,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+FitGuide is a MERN-based fitness web app offering workout programs, diet plans, trainer profiles, and Razorpay payments. Includes user login, registration, role-based access, and a 3-day free trial. Built using React, Node.js, Express, and MySQL.

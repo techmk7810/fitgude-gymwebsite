@@ -1,0 +1,73 @@
+/* ==============================================
+   Filtered Trainers Section - Professional Styling
+   ============================================== */
+   .filtered-trainers-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin-top: 70px;
+}
+
+/* Back Button Styling */
+.back-btn {
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--red);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.back-btn:hover {
+    background: #ff1a1a;
+    transform: scale(1.05);
+}
+
+/* Title Styling */
+.filtered-title {
+    font-size: 2.5rem;
+    color: var(--red);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+}
+
+/* Grid Layout for Trainers */
+.filtered-trainers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.get-plan-btn {
+    background-color: #ff5722; /* Orange color */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  .get-plan-btn:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+    transform: scale(1.05);
+  }
+  
+  .get-plan-btn:active {
+    background-color: #d84315;
+    transform: scale(0.98);
+  }
+  

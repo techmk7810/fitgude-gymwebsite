@@ -1,0 +1,509 @@
+/*****************************************************
+     Media Queries Start
+******************************************************/
+
+@media only screen and (min-width:2200px) {
+    .max-width-center {
+        max-width: 1800px;
+    }
+
+    html {
+        font-size: 100%;
+    }
+}
+
+
+@media only screen and (min-width:1900px) and (max-width:2199px) {
+    .max-width-center {
+        max-width: 1500px;
+    }
+
+    html {
+        font-size: 88%;
+    }
+}
+
+
+@media only screen and (min-width:1580px) and (max-width:1899px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+
+@media only screen and (max-width:1536px) and (min-height:900px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+
+@media only screen and (max-width:1300px) and (min-height:900px) {
+    html {
+        font-size: 80%;
+    }
+}
+
+
+@media only screen and (max-width:1150px) and (min-height:900px) {
+
+    .section-block-padding {
+        padding-block: 4rem;
+    }
+
+    .logo-box h2 {
+        font-size: 3rem;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: initial;
+        gap: 1rem;
+    }
+
+    nav .nav-btn {
+        display: none;
+    }
+
+
+    .nav-links ul {
+        gap: 3.2rem;
+    }
+
+    .nav-links ul li a {
+        font-size: 1.8rem;
+    }
+
+    .training-box {
+        padding-inline: 4%;
+    }
+
+    .offer-boxes-container {
+        gap: 4%;
+    }
+
+    .offer-box {
+        flex: unset;
+        flex-basis: 48%;
+        margin-bottom: 4%;
+    }
+
+    .gallery-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .gallery-row-1 .gallery-box:nth-child(3) {
+        grid-column: 1 / span 2;
+    }
+
+    .gallery-row-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-row-2 .gallery-box:nth-child(3) {
+        grid-column: 1 / span 2;
+    }
+
+
+
+    .pricing-boxes-container {
+        gap: 4%;
+        justify-content: initial;
+    }
+
+    .pricing-box {
+        flex-basis: 48%;
+        margin-bottom: 4%;
+        padding: 2rem;
+    }
+
+    .about-info {
+        padding-left: 2rem;
+    }
+
+    .blogs-boxes-container {
+        gap: 2rem;
+    }
+
+    .contact-center {
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width:1000px) and (max-height:899px) {
+    html {
+        font-size: 58%;
+    }
+}
+
+
+@media only screen and (max-width:900px) {
+
+    .section-block-padding {
+        padding-block: 4rem;
+    }
+
+    .logo-box h2 {
+        font-size: 3rem;
+    }
+
+    nav {
+        flex-direction: column;
+        justify-content: initial;
+        gap: 1rem;
+    }
+
+    nav .nav-btn {
+        display: none;
+    }
+
+
+    .nav-links ul {
+        gap: 3.2rem;
+    }
+
+    .nav-links ul li a {
+        font-size: 1.8rem;
+    }
+
+    .training-box {
+        padding-inline: 4%;
+    }
+
+    .offer-boxes-container {
+        gap: 4%;
+    }
+
+    .offer-box {
+        flex: unset;
+        flex-basis: 48%;
+        margin-bottom: 4%;
+    }
+
+    .gallery-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .gallery-row-1 .gallery-box:nth-child(3) {
+        grid-column: 1 / span 2;
+    }
+
+    .gallery-row-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-row-2 .gallery-box:nth-child(3) {
+        grid-column: 1 / span 2;
+    }
+
+    .pricing-boxes-container {
+        gap: 4%;
+        justify-content: initial;
+    }
+
+    .pricing-box {
+        flex-basis: 48%;
+        margin-bottom: 4%;
+        padding: 2rem;
+    }
+
+    .about-info {
+        padding-left: 2rem;
+    }
+
+    .blogs-boxes-container {
+        gap: 2rem;
+    }
+
+    .contact-center {
+        gap: 4%;
+    }
+
+    .contact-box {
+        flex: unset;
+        flex-basis: 48%;
+        margin-bottom: 6%;
+    }
+
+}
+
+
+@media only screen and (max-width:768px) and (min-height:900px) {
+    html {
+        font-size: 88%;
+    }
+
+}
+
+
+@media only screen and (max-width:768px) {
+    #hero-text h1 {
+        font-size: 8rem;
+    }
+
+    .section-heading {
+        font-size: 8rem;
+    }
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .mobile-toggle-btn {
+        display: grid;
+        z-index: 5;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.758);
+        display: grid;
+        place-items: center;
+        z-index: 2;
+        transition: all .5s ease-out;
+        transform: perspective(2000px) rotateY(-90deg);
+        transform-origin: right;
+    }
+
+    .active .nav-links {
+        transform: perspective(2000px) rotateX(0deg);
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+
+    .training-boxes-container,
+    .offer-boxes-container,
+    .pricing-boxes-container,
+    #about-section,
+    .blogs-boxes-container,
+    .contact-center {
+        gap: 4rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .training-box {
+        flex: unset;
+        width: 100%;
+        margin-bottom: 0;
+        padding-inline: 10%;
+    }
+
+    .offer-box {
+        flex-basis: unset;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .offer-box img,
+    .gallery-box img {
+        height: 30rem;
+    }
+
+    .pricing-box {
+        flex-basis: unset;
+        width: 65%;
+        margin-bottom: 0;
+        padding: 2rem;
+    }
+
+    .about-img {
+        flex: unset;
+        width: 100%;
+    }
+
+    .about-info {
+        flex: unset;
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .contact-box {
+        flex: unset;
+        flex-basis: unset;
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+@media only screen and (max-width:700px) and (min-height:900px) {
+    html {
+        font-size: 70%;
+    }
+}
+
+
+@media only screen and (max-width:550px) {
+    .pricing-box {
+        width: 90%;
+    }
+
+    .gallery-row,
+    .gallery-row-2 {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .gallery-row-1 .gallery-box:nth-child(3),
+    .gallery-row-2 .gallery-box:nth-child(3) {
+        grid-column: initial;
+    }
+
+}
+
+@media only screen and (max-width:550px) and (min-height:900px) {
+
+    html {
+        font-size: 76%;
+    }
+
+    .pricing-box,
+    .contact-box {
+        width: 100%;
+    }
+
+    .section-heading {
+        font-size: 4.5rem;
+    }
+
+    #hero-text h2 {
+        font-size: 3.3rem;
+    }
+
+    #hero-text h1 {
+        margin-top: .7rem;
+        font-size: 5.6rem;
+    }
+
+    .logo-box img {
+        height: 5.5rem;
+    }
+
+    .logo-box h2 {
+        font-size: 2.3rem;
+    }
+
+    .nav-links ul li a {
+        font-size: 1.6rem;
+    }
+
+    .mobile-toggle-btn {
+        font-size: 2rem;
+    }
+}
+
+
+@media only screen and (max-width:400px) and (max-height:899px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+
+
+    button {
+        font-size: 1.6rem;
+    }
+
+    .section-heading {
+        font-size: 6.2rem;
+    }
+
+    /**********************************************************
+    Header Start 
+**********************************************************/
+    header {
+        width: 100%;
+        min-height: 100vh;
+        background-image: linear-gradient(-219deg, rgba(0, 0, 0, 0.788) 12%, rgba(255, 0, 0, 0.82) 37%, rgba(0, 0, 0, 0.13)70%), url("../assets/hero-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .pricing-box,
+    .contact-box {
+        width: 95%;
+    }
+
+
+
+    #hero-text h2 {
+        font-size: 3.7rem;
+    }
+
+    #hero-text h1 {
+        margin-top: .7rem;
+        font-size: 6.5rem;
+    }
+
+
+    footer ul li a {
+        font-size: 1.4rem;
+    }
+
+    .social-media-icons a {
+        font-size: 2rem;
+    }
+
+}
+
+
+@media only screen and (max-width:320px) {
+
+    html {
+        font-size: 45%;
+    }
+
+}
+
+@media only screen and (max-width:280px) {
+
+    html {
+        font-size: 35%;
+    }
+
+}
+
+@media only screen and (max-width:200px) {
+
+    html {
+        font-size: 22%;
+    }
+
+}
+
+
+
+
+
+
+
+
+/*****************************************************
+     Media Queries End
+******************************************************/

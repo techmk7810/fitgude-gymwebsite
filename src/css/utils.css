@@ -1,0 +1,71 @@
+/************************************************************
+    Utility Classes Start
+************************************************************/
+
+
+.max-width-center {
+    max-width: 1300px;
+    margin-inline: auto;
+    padding-inline: 2%;
+    width: 100%;
+}
+
+.section-inline-padding {
+    padding-inline: 2%;
+}
+
+.section-block-padding {
+    padding-block: 6rem;
+}
+
+.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-d-col {
+    flex-direction: column;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.transparent-btn {
+    color: var(--white);
+    background-color: transparent;
+    border: 2px solid var(--white);
+}
+
+@media (hover:hover) {
+    .transparent-btn:hover {
+        color: var(--black);
+        background-color: var(--white);
+    }
+}
+
+.section-heading {
+    text-align: center;
+    padding-block: 5rem;
+    letter-spacing: 1.8px;
+    font-size: 10rem;
+    -webkit-text-stroke: 1px var(--white);
+    -webkit-text-fill-color: transparent;
+}
+
+
+/************************************************************
+    Utility Classes End
+************************************************************/

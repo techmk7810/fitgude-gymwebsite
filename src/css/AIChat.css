@@ -1,0 +1,64 @@
+/* AI Chat Styles */
+.chat-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: "Arial", sans-serif;
+  }
+  
+  h2 {
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .chat-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  .chat-input:focus {
+    border-color: #0056b3;
+  }
+  
+  .chat-button {
+    padding: 10px 15px;
+    border: none;
+    background: #007bff;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .chat-button:hover {
+    background: #0056b3;
+  }
+  
+  .chat-response {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f8f9fa;
+    border-left: 4px solid #007bff;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    border-radius: 5px;
+  }
+  

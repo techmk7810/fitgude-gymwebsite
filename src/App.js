@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import { Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Nav";
+// import Home from "./pages/Home";
+import SignIn from "./User/SignIn";
+import SignUp from "./User/SignUp";
+import AboutSection from "./AboutSection";
+import OfferSection from "./OfferSection";
+import PricingSection from "./PricingSection";
+import { GallerySection } from "./GallerySection";
+import ContactSection from "./ContactSection";
+import Home from "./home";
+// import Footer from "./Footer";
+import FilteredTrainers from "./FilteredTrainers";
+import TrainerCard from "./Trainer";
+import MyBookings from "./MyBookings";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/login" element={<SignIn />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/bookings" element={<MyBookings />} />
+        <Route path="/about" element={<AboutSection />} />
+        <Route path="/trainers" element={<FilteredTrainers />} />
+        <Route path="/training" element={<TrainerCard />} />
+        <Route path="/offers" element={<OfferSection />} />
+        <Route path="/pricing" element={<PricingSection />} />
+        <Route path="/gallery" element={<GallerySection />} />
+        <Route path="/contact" element={<ContactSection />} />
+      </Routes>
+      {/* <Footer /> */}
+      </>
   );
 }
 
